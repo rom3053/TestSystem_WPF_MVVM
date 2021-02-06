@@ -1,0 +1,32 @@
+﻿<Application x:Class="DP_WPF_MVVM_LoginReg_20190128.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DP_WPF_MVVM_LoginReg_20190128"
+             xmlns:converter="clr-namespace:DP_WPF_MVVM_LoginReg_20190128.Converter"
+             xmlns:converter1="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+             xmlns:locals="clr-namespace:DP_WPF_MVVM_LoginReg_20190128.LoginService"
+             StartupUri="LoginService/AuthenticationView.xaml">
+    <!--"LoginService/AuthenticationView.xaml" "View/MainWindow.xaml"-->
+    <Application.Resources>
+        <ResourceDictionary>
+            <local:ViewModelLocator x:Key="mainViewModelLocator"></local:ViewModelLocator>
+            <converter:DoNothingConverter x:Key="localDoNothingConverter"></converter:DoNothingConverter>
+            <converter:AddOneConverter x:Key="localAddOneConverter"></converter:AddOneConverter>
+            <converter:RadioButtonCheckedConverter x:Key="localRadioButtonCheckedConverter"></converter:RadioButtonCheckedConverter>
+            <converter1:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <converter:ValueColorConverter x:Key="localValueColorConverter"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <!-- Themes -->
+                <ResourceDictionary Source="LoginService/Styles/Blue.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="LoginService/Styles/CoreResourceDictionary.xaml"></ResourceDictionary>
+                
+                <ResourceDictionary Source="LoginService/Styles/UserControlResourceDictionary.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
