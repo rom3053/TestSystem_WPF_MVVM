@@ -1,0 +1,58 @@
+﻿<Controls:MetroWindow x:Class="DP_WPF_MVVM_LoginReg_20190128.View.TwoListBoxesGroupSelectionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DP_WPF_MVVM_LoginReg_20190128.View"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="TwoListBoxesGroupSelectionView" Height="421.2" Width="522.8" MinHeight="421.2" MinWidth="522.8"
+        DataContext="{Binding Source={StaticResource mainViewModelLocator} ,  Path=TwoListBoxesGroupSelectionViewModel}"
+        >
+    <Grid Margin="0,0,-0.2,-1.2" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="111*"/>
+            <RowDefinition Height="147*"/>
+            <RowDefinition Height="92*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="194*"/>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="192*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="9.6,9.4,3.4,5" Grid.RowSpan="2" Grid.Column="2" Grid.Row="1" Background="#CC119EDA" >
+            <ListBox Margin="2,2,2,2" Name="LeftListBox" ItemsSource="{Binding AllGroupsToTheRight}" SelectedItem="{Binding SelectedRight}"  MinWidth="177" Background="White"
+                     ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" >
+                            <TextBlock Margin="3" Text="{Binding Path=GroupName}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <Grid Margin="10,9.4,0.6,5" Grid.RowSpan="2" Grid.Row="1" Background="#CC119EDA">
+            <ListBox Margin="2,2,2,2" Name="RightListBox" MinWidth="177" ItemsSource="{Binding AddGroupsToTheLeft}" SelectedItem="{Binding SelectedLeft}"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" BorderBrush="#FFCDCDCD" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" >
+                            <TextBlock Margin="3" Text="{Binding Path=GroupName}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <Button Name="AddButton" Margin="10.4,26.4,10.4,31.8" Content="&lt;&lt; Add " MinHeight="10.4" MinWidth="26.4"
+         Command="{Binding MoveLeft}" Grid.Column="1" Grid.Row="1" />
+        <Button Name="RemoveButton" Margin="10.4,40.2,10.4,49" Content="Remove >>" MinHeight="10.4" MinWidth="26.4"
+         Command="{Binding MoveRight}" Grid.Column="1" Grid.Row="2" />
+        <Button Command="{Binding Accept}" Content="To Accept" HorizontalAlignment="Left" MinHeight="38" Margin="14,27,0,0" VerticalAlignment="Top" MinWidth="150" Grid.Row="3"/>
+        <Label Content="Selected Group To Add" Margin="14,5,19.6,2.6" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="All Groups" Margin="9.6,6,21.4,1.6" Grid.Column="2" FontFamily="Times New Roman" FontSize="16"/>
+        <Button Content="Cancel" Command="{Binding Cancel}" HorizontalAlignment="Left" MinHeight="38" Margin="9.6,27,0,0" VerticalAlignment="Top" MinWidth="150" Grid.Column="2" Grid.Row="3" RenderTransformOrigin="0.495,0.47"/>
+    </Grid>
+</Controls:MetroWindow>
