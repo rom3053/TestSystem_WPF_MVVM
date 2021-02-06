@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP_WPF_MVVM_LoginReg_20190128", "DP_WPF_MVVM_LoginReg_20190128\DP_WPF_MVVM_LoginReg_20190128.csproj", "{57CAD4B0-4904-492C-B521-F3D89A4D8254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.MVVM.UsersManagement.DAL", "DP.MVVM.UsersManagement.DAL\DP.MVVM.UsersManagement.DAL.csproj", "{6B997DF3-00BD-4516-9EB7-52EA915561CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.MVVM.UserManagement.Model", "DP.MVVM.UserManagement.Model\DP.MVVM.UserManagement.Model.csproj", "{7CDA9430-D695-49A7-88C4-6E06758056B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.MVVM.TestManagement.Model", "DP.MVVM.TestManagement.Model\DP.MVVM.TestManagement.Model.csproj", "{1B9A023A-DF54-474F-AD09-85D545A1AE1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.MVVM.TestManagement.DAL", "DP.MVVM.TestManagement.DAL\DP.MVVM.TestManagement.DAL.csproj", "{3BC8BBD6-8DF2-40A5-A30B-AEDBCAFA1C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateXLSXwithClosedXML", "GenerateXLSXwithClosedXML\GenerateXLSXwithClosedXML.csproj", "{77FC48EC-4A3D-4AC6-A1B4-624D511DADC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57CAD4B0-4904-492C-B521-F3D89A4D8254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57CAD4B0-4904-492C-B521-F3D89A4D8254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57CAD4B0-4904-492C-B521-F3D89A4D8254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57CAD4B0-4904-492C-B521-F3D89A4D8254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B997DF3-00BD-4516-9EB7-52EA915561CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B997DF3-00BD-4516-9EB7-52EA915561CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B997DF3-00BD-4516-9EB7-52EA915561CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B997DF3-00BD-4516-9EB7-52EA915561CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CDA9430-D695-49A7-88C4-6E06758056B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDA9430-D695-49A7-88C4-6E06758056B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDA9430-D695-49A7-88C4-6E06758056B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDA9430-D695-49A7-88C4-6E06758056B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B9A023A-DF54-474F-AD09-85D545A1AE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9A023A-DF54-474F-AD09-85D545A1AE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9A023A-DF54-474F-AD09-85D545A1AE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9A023A-DF54-474F-AD09-85D545A1AE1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC8BBD6-8DF2-40A5-A30B-AEDBCAFA1C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC8BBD6-8DF2-40A5-A30B-AEDBCAFA1C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC8BBD6-8DF2-40A5-A30B-AEDBCAFA1C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC8BBD6-8DF2-40A5-A30B-AEDBCAFA1C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FC48EC-4A3D-4AC6-A1B4-624D511DADC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FC48EC-4A3D-4AC6-A1B4-624D511DADC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FC48EC-4A3D-4AC6-A1B4-624D511DADC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FC48EC-4A3D-4AC6-A1B4-624D511DADC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {772BE658-ED7C-4341-9E5A-DC088756263F}
+	EndGlobalSection
+EndGlobal
